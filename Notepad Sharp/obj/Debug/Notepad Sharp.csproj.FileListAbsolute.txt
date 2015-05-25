@@ -1,0 +1,14 @@
+c:\users\randy\documents\visual studio 2013\Projects\Notepad Sharp\Notepad Sharp\bin\Debug\Notepad Sharp.exe.config
+c:\users\randy\documents\visual studio 2013\Projects\Notepad Sharp\Notepad Sharp\obj\Debug\Notepad Sharp.csprojResolveAssemblyReference.cache
+c:\users\randy\documents\visual studio 2013\Projects\Notepad Sharp\Notepad Sharp\obj\Debug\Notepad_Sharp.Properties.Resources.resources
+c:\users\randy\documents\visual studio 2013\Projects\Notepad Sharp\Notepad Sharp\obj\Debug\Notepad Sharp.csproj.GenerateResource.Cache
+c:\users\randy\documents\visual studio 2013\Projects\Notepad Sharp\Notepad Sharp\bin\Debug\Notepad Sharp.exe
+c:\users\randy\documents\visual studio 2013\Projects\Notepad Sharp\Notepad Sharp\bin\Debug\Notepad Sharp.pdb
+c:\users\randy\documents\visual studio 2013\Projects\Notepad Sharp\Notepad Sharp\obj\Debug\Notepad Sharp.exe
+c:\users\randy\documents\visual studio 2013\Projects\Notepad Sharp\Notepad Sharp\obj\Debug\Notepad Sharp.pdb
+c:\users\randy\documents\visual studio 2013\Projects\Notepad Sharp\Notepad Sharp\obj\Debug\Notepad_Sharp.Notepad.resources
+c:\users\randy\documents\visual studio 2013\Projects\Notepad Sharp\Notepad Sharp\bin\Debug\Dictionary.txt
+C:\Users\Randy\documents\visual studio 2013\Projects\Notepad Sharp\Notepad Sharp\bin\Debug\Notepad Sharp.exe.manifest
+C:\Users\Randy\documents\visual studio 2013\Projects\Notepad Sharp\Notepad Sharp\bin\Debug\Notepad Sharp.application
+C:\Users\Randy\documents\visual studio 2013\Projects\Notepad Sharp\Notepad Sharp\obj\Debug\Notepad Sharp.exe.manifest
+C:\Users\Randy\documents\visual studio 2013\Projects\Notepad Sharp\Notepad Sharp\obj\Debug\Notepad Sharp.application
