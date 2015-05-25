@@ -186,6 +186,7 @@ namespace Notepad_Sharp
         }
         #endregion
         #region Text Formatting
+        // Bold Button
         private void menuBold_Click(object sender, EventArgs e)
         {
             Font oldFont = rtbMainText.SelectionFont;
@@ -204,7 +205,7 @@ namespace Notepad_Sharp
                 newFontStyle
             );
         }
-
+        // Italic Button
         private void menuItalic_Click(object sender, EventArgs e)
         {
             Font oldFont = rtbMainText.SelectionFont;
@@ -223,7 +224,7 @@ namespace Notepad_Sharp
                 newFontStyle
             );
         }
-
+        // Underline Button
         private void menuUnderline_Click(object sender, EventArgs e)
         {
             Font oldFont = rtbMainText.SelectionFont;
@@ -242,17 +243,17 @@ namespace Notepad_Sharp
                 newFontStyle
             );
         }
-
+        // Lowercase Button
         private void menuLowerCase_Click(object sender, EventArgs e)
         {
             rtbMainText.SelectedText = rtbMainText.SelectedText.ToLower();
         }
-
+        // Uppercase Button
         private void menuUpperCase_Click(object sender, EventArgs e)
         {
             rtbMainText.SelectedText = rtbMainText.SelectedText.ToUpper();
         }
-
+        // Fontsize Button
         private void menuFontSize_Click(object sender, EventArgs e)
         {
             float fontSize = float.Parse(txtFontSize.Text);
@@ -261,14 +262,14 @@ namespace Notepad_Sharp
             rtbMainText.Font = new Font(rtbMainText.Font.Name, fontSize,
                 rtbMainText.Font.Style, rtbMainText.Font.Unit);
         }
-
+        // Incrase Fontsize Button
         private void menuIncreaseFontSize_Click(object sender, EventArgs e)
         {
             float currentSize = rtbMainText.Font.SizeInPoints;
             rtbMainText.Font = new Font(rtbMainText.Font.Name, currentSize += 5,
                 rtbMainText.Font.Style, rtbMainText.Font.Unit);
         }
-
+        // Decrease Fontsize Button
         private void menuDecreaseFontSize_Click(object sender, EventArgs e)
         {
             float currentSize = rtbMainText.Font.SizeInPoints;
@@ -279,37 +280,40 @@ namespace Notepad_Sharp
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message, "Error");
             }
         }
+        // Event Handler for selecting a Font Item from the DropDownList
         private void menuFonts_ItemSelected(Object sender, EventArgs e)
         {
             Font font = new Font(menuComboBoxFonts.SelectedItem.ToString(), menuFontSampleText.Font.SizeInPoints);
+            // If text hasn't been selected then the Font will be applied to the preview text.
             if (rtbMainText.SelectedText == null)
             {
                 menuFontSampleText.Font = font;
             }
+            // If text has been selected the the Font will be applied to the selected text.
             else
             {
                 rtbMainText.SelectionFont = font;
             }
         }
-
+        // About
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This notepad was created by Randy Laird on 5/22/2015", "About");
         }
         #endregion
-        private void speechToTextToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
+        // Event handler for when Speech is recognized
         void sr_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             rtbMainText.AppendText(e.Result.Text + " ");
         }
         #region Drag and Drop
+        // Event Handler for when a drag and drop is performed on the rtbMainText control
         void DragDrop_Form(object sender, DragEventArgs e)
         {
+            // Store the FileDrop information into an object
             object filename = e.Data.GetData("FileDrop");
             if (filename != null)
             {
